@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap');
-
 :root {
   --primary-color: #063a50;
   --secondary-color: #0d6e8a;
   --accent1-color: #18333d;
   --accent2-color: #f4b942;
   --paper-color: #f7f5ef;
-  --heading-font: "Playfair Display", Georgia, serif;
-  --body-font: "Outfit", Arial, sans-serif;
-  --label-font: "DM Mono", monospace;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+  --label-font: "Courier New", monospace;
 }
 
 * {
