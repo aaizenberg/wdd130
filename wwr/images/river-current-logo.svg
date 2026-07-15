@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">River Current Rafting logo</title>
+  <desc id="desc">A golden river current flowing between two dark blue mountain peaks.</desc>
+  <path fill="#063a50" d="M12 92 54 25l26 42L107 19l61 73Z"/>
+  <path fill="#f4b942" d="M22 90c20-17 33-13 45-4 14 10 28 9 42-5 16-16 31-16 49-2v13H22Z"/>
+  <path fill="#fff7e7" d="M28 100c18-13 31-8 43 1 16 11 32 8 44-3 14-12 27-12 39-5v7H28Z"/>
+  <text x="90" y="113" text-anchor="middle" fill="#063a50" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">RIVER CURRENT</text>
+</svg>
