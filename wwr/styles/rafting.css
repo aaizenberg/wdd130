@@ -35,8 +35,6 @@ h2 {
   color: var(--primary-color);
 }
 
-nav,
-p,
 section,
 article {
   margin: 16px;
@@ -60,16 +58,17 @@ header {
 }
 
 header nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   align-self: stretch;
   margin: 0;
   padding: 0;
 }
 
 header nav a {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
   padding: 18px 10px;
   color: var(--primary-color);
   font-family: var(--label-font);
@@ -190,12 +189,66 @@ section p {
   font-size: 1.05rem;
 }
 
+.history {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px 20px;
+}
+
+.history h2 {
+  grid-column: 1 / -1;
+}
+
+.history p {
+  margin: 0;
+}
+
+.history img {
+  display: block;
+  width: 170px;
+  height: 128px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 0 var(--accent2-color);
+}
+
 .adventures {
-  min-height: 96px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
   background:
     linear-gradient(90deg, rgb(13 110 138 / 7%) 1px, transparent 1px) 0 0 / 18px 18px,
     linear-gradient(0deg, rgb(13 110 138 / 7%) 1px, transparent 1px) 0 0 / 18px 18px,
     var(--paper-color);
+}
+
+.adventures h2 {
+  grid-column: 1 / -1;
+}
+
+.adventures figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.adventures figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 0 var(--secondary-color);
+}
+
+.adventures figcaption {
+  padding-top: 7px;
+  color: var(--primary-color);
+  font-family: var(--label-font);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
 }
 
 footer {
@@ -254,10 +307,11 @@ footer p {
   }
 
   header nav {
-    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
   }
 
   header nav a {
+    flex-basis: 50%;
     border-top: 1px solid #cfdbdb;
   }
 
@@ -294,6 +348,25 @@ footer p {
   section {
     margin: 24px 12px;
     padding: 18px 16px;
+  }
+
+  .history {
+    grid-template-columns: 1fr;
+  }
+
+  .history img {
+    grid-row: 3;
+    justify-self: center;
+  }
+
+  .adventures {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adventures figure:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 7px);
+    justify-self: center;
   }
 
   h2 {
