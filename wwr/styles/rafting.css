@@ -509,7 +509,10 @@ section p {
   top: 48px;
   left: 48px;
   max-width: 510px;
+  padding: 16px 20px 20px;
   color: #fff;
+  background: rgb(3 27 38 / 89%);
+  box-shadow: 5px 5px 0 rgb(244 185 66 / 88%);
   font-size: clamp(3rem, 7vw, 5.1rem);
   font-style: italic;
   letter-spacing: -0.055em;
@@ -523,7 +526,8 @@ section p {
   bottom: 48px;
   left: 48px;
   width: min(390px, calc(100% - 96px));
-  padding-left: 18px;
+  padding: 16px 20px 18px;
+  background: rgb(3 27 38 / 89%);
   border-left: 5px solid var(--accent2-color);
 }
 
